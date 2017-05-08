@@ -51,5 +51,8 @@ public class PredicateTest {
     }
 
 
+    public Predicate<String> isEqual(Object obj) {
+        return Predicate.isEqual(obj);
+    }
 
 }

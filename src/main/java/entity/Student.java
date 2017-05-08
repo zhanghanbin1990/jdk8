@@ -1,14 +1,11 @@
-/**
- * Created by zhanghanbin on 2017/5/6.
- */
-public class Person {
-    private String name;
-    private int age;
+package entity;
 
-    public Person(String name,int age) {
-        this.name = name;
-        this.age = age;
-    }
+/**
+ * Created by zhanghanbin on 2017/5/7.
+ */
+public class Student {
+    private String name = "zhanghanbin";
+    private int age = 20;
 
     public String getName() {
         return name;
