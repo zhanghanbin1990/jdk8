@@ -82,7 +82,7 @@ public class MethodReferenceTest {
         MethodReferenceTest test = new MethodReferenceTest();
         System.out.println(test.getString(String::new));
 
-        System.out.println(test.getString("hello",String::new));//类名::new
+        System.out.println(test.getString("hello", String::new));//类名::new
 
     }
 }
