@@ -12,9 +12,9 @@ import static java.util.stream.Collector.Characteristics.UNORDERED;
 
 /**
  * Created by zhanghanbin on 2017/6/18.
- * 自定义Collector接口
+ * 自定义Collector接口，串行操作
  */
-public class MySetCollector<T> implements Collector<T,Set<T>,Set<T>> {
+public class MySetCollector1<T> implements Collector<T,Set<T>,Set<T>> {
 
     /**
      * 被accumulator()调用的最初的结果容器
@@ -54,13 +54,13 @@ public class MySetCollector<T> implements Collector<T,Set<T>,Set<T>> {
     @Override
     public Set<Characteristics> characteristics() {
         System.out.println("characteristics invoker");
-        return Collections.unmodifiableSet(EnumSet.of(IDENTITY_FINISH,UNORDERED));
+        return Collections.unmodifiableSet(EnumSet.of(UNORDERED));
     }
 
     public static void main(String[] args) {
         List<String> list = Arrays.asList("hello", "world", "welcome");
         //注意参见collect的实现
-        Set<String> set = list.stream().collect(new MySetCollector<>());
+        Set<String> set = list.stream().collect(new MySetCollector1<>());
         System.out.println(set);
     }
 }
