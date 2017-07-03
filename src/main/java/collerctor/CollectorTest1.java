@@ -14,10 +14,10 @@ import java.util.stream.Collectors;
  */
 public class CollectorTest1 {
     public static void main(String[] args) {
-        Student student1 = new Student("zhangsan", 70.5);
-        Student student2 = new Student("lisi", 90.9);
-        Student student3 = new Student("wangwu", 100.0);
-        Student student4 = new Student("zhangsan", 90.9);
+        Student student1 = new Student("zhangsan", 70.5,"1");
+        Student student2 = new Student("lisi", 90.9,"1");
+        Student student3 = new Student("wangwu", 100.0,"2");
+        Student student4 = new Student("zhangsan", 90.9,"2");
 
         List<Student> students = Arrays.asList(student1, student2, student3, student4);
 

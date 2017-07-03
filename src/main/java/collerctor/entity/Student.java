@@ -6,10 +6,12 @@ package collerctor.entity;
 public class Student {
     private String name;
     private Double score;
+    private String classes;
 
-    public Student(String name, Double score) {
+    public Student(String name, Double score, String classes) {
         this.name = name;
         this.score = score;
+        this.classes = classes;
     }
 
     public String getName() {
@@ -28,11 +30,20 @@ public class Student {
         this.score = score;
     }
 
+    public String getClasses() {
+        return classes;
+    }
+
+    public void setClasses(String classes) {
+        this.classes = classes;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", score=" + score +
+                ", classes='" + classes + '\'' +
                 '}';
     }
 }
