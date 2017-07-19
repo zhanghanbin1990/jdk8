@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdk8.iml" filepath="$PROJECT_DIR$/.idea/modules/jdk8.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdk8_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jdk8_main.iml" group="jdk8" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdk8_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jdk8_test.iml" group="jdk8" />
     </modules>
   </component>
 </project>
